@@ -345,6 +345,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	.query{
 		/*margin: 0 0 (_size(element-margin) * 1.75) 0;*/
 		min-height: 5em;
+		margin-bottom: 1em;
 	}
 	
 	.both {
@@ -354,11 +355,12 @@ $baseurl: '{{ site.baseurl }}/images';
 		display: block;
 	  }
 	}
-	.map {
+	.map-wrapper {
 	  flex: 0 0 65%;
 	  
 	  @include breakpoint(small) {
 		display: block;
+		padding-bottom: 2em;
 	  }
 	  
 	}
@@ -369,6 +371,23 @@ $baseurl: '{{ site.baseurl }}/images';
 		display: block;
 	  }
 	  
+	}
+	
+	.map {
+		display: block;
+		height: 20em;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	
+	.centre {
+		@include breakpoint(small) {
+			text-align: center;
+			width: 100%;
+			max-width: none;
+		}
 	}
 
 	textarea {

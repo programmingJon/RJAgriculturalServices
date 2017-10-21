@@ -1345,7 +1345,8 @@ select {
 
 .query {
   /*margin: 0 0 (_size(element-margin) * 1.75) 0;*/
-  min-height: 5em; }
+  min-height: 5em;
+  margin-bottom: 1em; }
 
 .both {
   display: flex; }
@@ -1353,17 +1354,31 @@ select {
     .both {
       display: block; } }
 
-.map {
+.map-wrapper {
   flex: 0 0 65%; }
   @media screen and (max-width: 736px) {
-    .map {
-      display: block; } }
+    .map-wrapper {
+      display: block;
+      padding-bottom: 2em; } }
 
 .location {
   flex: 1; }
   @media screen and (max-width: 736px) {
     .location {
       display: block; } }
+
+.map {
+  display: block;
+  height: 20em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (max-width: 736px) {
+  .centre {
+    text-align: center;
+    width: 100%;
+    max-width: none; } }
 
 textarea {
   padding: 0.75em 1em; }
